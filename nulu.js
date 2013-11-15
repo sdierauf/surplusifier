@@ -24,6 +24,7 @@ run.onclick = function () {
 	if (toBeSurplussed.checked) {
 		result += " z tobesurp";
 	}
+	//not sure what nulu command changes building
 	document.getElementById("change").innerHTML = result;
 	
 	copyToClipboard(result);
@@ -42,4 +43,8 @@ run.onclick = function () {
 
 function copyToClipboard (text) {
   window.prompt ("Copy to clipboard: Ctrl+C, Enter", text);
+}
+
+window.onload = function() {
+  $('.selectpicker').selectpicker();
 }
